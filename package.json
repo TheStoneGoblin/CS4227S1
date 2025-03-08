@@ -2,6 +2,7 @@
   "name": "cs4227s1",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://thestonegoblin.github.io/CS4227S1/",
   "type": "module",
   "scripts": {
     "dev": "vite",
