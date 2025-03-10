@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App: React.FC = () => {
     return (
-        <BrowserRouter>
+        <Router>
             <Routes>
                 <Route path="/" element={<Login />} />
 
@@ -22,7 +22,7 @@ const App: React.FC = () => {
 
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
-        </BrowserRouter>
+        </Router>
     );
 };
 
